@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "¿Y si el objeto aparece después?",
-    answer: "Si tras cerrar la gestión te escriben con una pista, te lo reenviamos sin coste."
+    answer: "Si tras cerrar la gestión te escriben con una pista, reactivamos sin coste."
   },
   {
     question: "¿En qué países operáis?",
