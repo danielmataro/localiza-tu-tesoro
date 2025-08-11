@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# Localiza tu Tesoro — Starter con Stripe + Firebase Auth
 
-## Project info
+Este paquete actualiza tu web con:
+- Imágenes libres (Unsplash) y diseño más cuidado.
+- Sin mostrar correo en público.
+- Registro y login de usuarios (Firebase Auth).
+- Pasarela de pago (Stripe), con dos opciones:
+  - **Payment Link**: pega tu enlace en `stripe.js`.
+  - **Checkout** con función serverless (Netlify) usando `/.netlify/functions/create-checkout-session`.
 
-**URL**: https://lovable.dev/projects/34b0c623-dafd-4388-bd69-201774fdf46d
+## Puesta en marcha rápida
 
-## How can I edit this code?
+1) Sirve el sitio estático (por ejemplo con Netlify / Vercel / GitHub Pages).  
+2) **Firebase Auth**: en `auth.js` pon tus credenciales de Firebase (modo Email/Password habilitado).  
+3) **Stripe**:
+   - Opción A: Crea un Payment Link en Stripe y pégalo en `stripe.js` (`PREMIUM_PAYMENT_LINK`).
+   - Opción B (serverless): despliega en Netlify y configura variables de entorno:
+     - `STRIPE_SECRET_KEY` (sk_test_... o sk_live_...)
+     - `SITE_URL` (ej. https://tudominio.com)
+   - El botón **Comprar Premium** redirige al checkout seguro.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/34b0c623-dafd-4388-bd69-201774fdf46d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Desarrollo local
+Puedes usar `npx serve` o `python -m http.server` para ver el sitio:
+```bash
+npx serve .
+# o
+python -m http.server 8080
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/34b0c623-dafd-4388-bd69-201774fdf46d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Notas
+- El email del usuario solo se muestra a sí mismo en el menú (no público).
+- Sustituye textos/imágenes según tu marca.

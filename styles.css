@@ -1,0 +1,46 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0f172a;background:#0b1220}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}
+.header{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.6rem}
+.logo{width:36px;height:36px;border-radius:8px;object-fit:cover}
+.brand-name{font-weight:800;color:#e2e8f0}
+.nav a{color:#cbd5e1;text-decoration:none;margin-right:1rem}
+.nav a:hover{color:#fff}
+.btn{background:#22c55e;color:#00130a;border:none;border-radius:12px;padding:.7rem 1rem;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(1.05)}
+.btn.ghost{background:transparent;color:#e2e8f0;border:1px solid #334155}
+.btn.outline{background:transparent;border:2px solid #22c55e;color:#e2e8f0}
+.btn.xl{font-size:1.1rem;padding:1rem 1.25rem;border-radius:14px}
+.user-menu{display:flex;align-items:center;gap:.5rem}
+.hidden{display:none}
+.hero{position:relative}
+.hero-img{width:100%;height:60vh;object-fit:cover;filter:brightness(.7)}
+.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.hero h1{font-size:2.5rem;color:#fff;margin:0;max-width:22ch}
+.hero p{color:#e2e8f0;max-width:50ch}
+.cta{display:flex;gap:.8rem;margin-top:.5rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:3rem auto}
+.card{background:#0f172a;border:1px solid #1f2937;border-radius:16px;overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card h3{color:#fff;margin:.75rem 1rem}
+.card p{color:#cbd5e1;margin:0 1rem 1rem}
+.plans{background:linear-gradient(180deg,#0b1220,#0b1220 40%,#0f172a);padding:3rem 0;margin-top:2rem}
+.plans h2,.faq h2{color:#fff;margin-bottom:1rem}
+.plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.plan{background:#0f172a;border:1px solid #1f2937;border-radius:20px;padding:1.25rem;position:relative}
+.plan .price{font-size:2rem;color:#fff;margin:.2rem 0 1rem}
+.plan ul{color:#cbd5e1;list-style: none;padding:0;margin:0 0 1rem}
+.plan li{margin:.4rem 0}
+.plan.featured{border-color:#22c55e;box-shadow:0 0 0 2px #22c55e20}
+.badge{position:absolute;top:12px;right:12px;background:#22c55e;color:#00130a;padding:.25rem .5rem;border-radius:999px;font-size:.75rem;font-weight:800}
+.faq details{background:#0f172a;border:1px solid #1f2937;border-radius:12px;padding:.75rem 1rem;margin:.5rem 0;color:#cbd5e1}
+.footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #1f2937;padding:1rem 0;color:#94a3b8}
+.footer a{color:#cbd5e1}
+.auth-form{display:flex;flex-direction:column;gap:.75rem;padding:1rem}
+.auth-form input{width:100%;padding:.6rem;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#e2e8f0}
+.muted{font-size:.9rem;color:#94a3b8}
+@media(max-width:900px){
+  .grid3,.plan-cards{grid-template-columns:1fr}
+  .hero-img{height:48vh}
+  .hero h1{font-size:2rem}
+}
