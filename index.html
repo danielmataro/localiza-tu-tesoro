@@ -1,149 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Localiza tu Tesoro — Encuentra tus objetos perdidos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/app.js"></script>
-  <script defer src="/stripe.js"></script>
-  <script defer type="module" src="/auth.js"></script>
-</head>
-<body>
-  <header class="container header">
-    <div class="brand">
-      <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=120&auto=format&fit=crop" alt="Logo" class="logo">
-      <span class="brand-name">Localiza tu Tesoro</span>
-    </div>
-    <nav class="nav">
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#planes">Planes</a>
-      <a href="#faq">FAQ</a>
-      <button id="loginBtn" class="btn ghost">Entrar</button>
-      <button id="registerBtn" class="btn">Crear cuenta</button>
-      <div id="userMenu" class="user-menu hidden">
-        <span id="userEmail"></span>
-        <button id="logoutBtn" class="btn ghost">Salir</button>
-      </div>
-    </nav>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalizaMi | Búsqueda de objetos perdidos por 29€</title>
+    <meta name="description" content="¿Perdiste móvil, maleta o llaves? Gestionamos la búsqueda por ti: red global, seguimiento por email y WhatsApp. Precio fijo 29€." />
+    <meta name="author" content="LocalizaMi" />
+    <meta name="keywords" content="objetos perdidos, buscar objeto perdido, recuperar móvil perdido, localizar maleta, servicio de búsqueda, encontrar cartera" />
 
-  <main>
-    <section class="hero">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" media="(min-width: 1024px)">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Persona encontrando un objeto perdido" class="hero-img">
-      </picture>
-      <div class="hero-content container">
-        <h1>Perdiste algo. <br> Nosotros te ayudamos a recuperarlo.</h1>
-        <p>Publica tu búsqueda en segundos y activa la red que encuentra lo que se pierde.</p>
-        <div class="cta">
-          <a href="#planes" class="btn xl">Empezar ahora</a>
-          <a href="#como-funciona" class="btn xl ghost">Ver cómo funciona</a>
-        </div>
-      </div>
-    </section>
+    <meta property="og:title" content="LocalizaMi | Búsqueda de objetos perdidos por 29€" />
+    <meta property="og:description" content="¿Perdiste móvil, maleta o llaves? Gestionamos la búsqueda por ti: red global, seguimiento por email y WhatsApp. Precio fijo 29€." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <section id="como-funciona" class="container grid3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop" alt="Publica tu aviso">
-        <h3>1) Publica tu aviso</h3>
-        <p>Describe el objeto perdido, dónde y cuándo. Añade fotos si las tienes.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800&auto=format&fit=crop" alt="Activamos la red">
-        <h3>2) Activamos la red</h3>
-        <p>Difundimos tu aviso entre nuestra comunidad y canales locales.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1520975922423-c7b5fbf1c1f8?q=80&w=800&auto=format&fit=crop" alt="Recupera tu tesoro">
-        <h3>3) Recupera tu tesoro</h3>
-        <p>Recibe avisos y coordina la entrega de manera segura.</p>
-      </div>
-    </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    <section id="planes" class="plans">
-      <div class="container">
-        <h2>Planes</h2>
-        <div class="plan-cards">
-          <div class="plan">
-            <h3>Gratis</h3>
-            <p class="price">0€</p>
-            <ul>
-              <li>Publicación básica 7 días</li>
-              <li>1 foto</li>
-              <li>Soporte por chat</li>
-            </ul>
-            <button class="btn outline" id="btnEmpezarGratis">Empezar</button>
-          </div>
-          <div class="plan featured">
-            <span class="badge">Popular</span>
-            <h3>Premium</h3>
-            <p class="price">9,90€</p>
-            <ul>
-              <li>Prioridad en listados</li>
-              <li>Difusión ampliada</li>
-              <li>Publicación 30 días</li>
-            </ul>
-            <button class="btn" id="btnComprarPremium">Comprar Premium</button>
-          </div>
-          <div class="plan">
-            <h3>Pro</h3>
-            <p class="price">19,90€</p>
-            <ul>
-              <li>Publicaciones ilimitadas</li>
-              <li>Equipo y espacios</li>
-              <li>Validación avanzada</li>
-            </ul>
-            <button class="btn outline" id="btnContactarVentas">Hablar con ventas</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="container faq">
-      <h2>Preguntas frecuentes</h2>
-      <details>
-        <summary>¿Necesito cuenta?</summary>
-        <p>Sí, crea tu cuenta gratis para gestionar tus avisos. No mostramos tu correo públicamente.</p>
-      </details>
-      <details>
-        <summary>¿Cómo funciona el pago?</summary>
-        <p>Usamos Stripe para pagos seguros. Al pulsar “Comprar Premium” te llevamos a un checkout seguro.</p>
-      </details>
-      <details>
-        <summary>¿Qué pasa si recupero mi objeto?</summary>
-        <p>¡Genial! Puedes cerrar el aviso y, si quieres, desactivar la difusión.</p>
-      </details>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <p>© <span id="year"></span> Localiza tu Tesoro — Todos los derechos reservados.</p>
-    <nav class="footer-links">
-      <a href="#">Términos</a>
-      <a href="#">Privacidad</a>
-      <a href="#">Soporte</a>
-    </nav>
-  </footer>
-
-  <!-- Modales de autenticación -->
-  <dialog id="authDialog">
-    <form method="dialog" class="auth-form" id="authForm">
-      <h3 id="authTitle">Entrar</h3>
-      <label>Email
-        <input type="email" id="email" required />
-      </label>
-      <label>Contraseña
-        <input type="password" id="password" minlength="6" required />
-      </label>
-      <button class="btn" id="authSubmit">Continuar</button>
-      <button class="btn ghost" value="cancel">Cancelar</button>
-      <p class="muted" id="toggleAuth">¿No tienes cuenta? <a href="#" id="toRegister">Crear una</a></p>
-    </form>
-  </dialog>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
