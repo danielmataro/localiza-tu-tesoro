@@ -1,4 +1,4 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">LocalizaMi</h3>
+            <h3 className="text-xl font-bold">findfy</h3>
             <p className="text-sm opacity-80">
               Servicio profesional de búsqueda de objetos perdidos con red global de contactos.
             </p>
@@ -28,23 +28,17 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">Contacto</h4>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-sm">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:hola@localizami.com" className="opacity-80 hover:opacity-100 transition-opacity">
-                  hola@localizami.com
-                </a>
-              </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <MessageCircle className="h-4 w-4" />
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
-                  WhatsApp
-                </a>
+            <div className="space-y-4">
+              <h4 className="font-semibold">Contacto</h4>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-sm">
+                  <MessageCircle className="h-4 w-4" />
+                  <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
           <div className="space-y-4">
             <h4 className="font-semibold">Información legal</h4>
@@ -58,7 +52,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-80">
-            © 2024 LocalizaMi. Todos los derechos reservados.
+            © 2024 findfy. Todos los derechos reservados.
           </p>
         </div>
       </div>

@@ -30,7 +30,7 @@ const testimonials = [
     name: "Carlos Ruiz",
     object: "Maleta",
     city: "Madrid",
-    quote: "Mi maleta se perdió en el tren. LocalizaMi contactó con RENFE y la encontraron en la estación de destino.",
+    quote: "Mi maleta se perdió en el tren. findfy contactó con RENFE y la encontraron en la estación de destino.",
     result: "Recuperado"
   },
   {

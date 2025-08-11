@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, MessageCircle, Shield } from "lucide-react";
-import heroObjectsImage from "@/assets/hero-objects.jpg";
+import heroRealImage from "@/assets/hero-real.jpg";
 
 const Hero = () => {
   return (
@@ -9,6 +9,11 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
+              <img 
+                src="/lovable-uploads/9bf9fb3f-1352-444d-92d4-0e5ac35e99ff.png" 
+                alt="findfy logo"
+                className="h-10 w-auto"
+              />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Perdiste algo.{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -82,7 +87,7 @@ const Hero = () => {
 
           <div className="relative">
             <img 
-              src={heroObjectsImage} 
+              src={heroRealImage} 
               alt="Objetos perdidos: llaves, móviles, maletas, mochilas, cámaras, documentos" 
               className="w-full h-auto rounded-2xl shadow-strong"
             />
