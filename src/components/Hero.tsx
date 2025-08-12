@@ -4,7 +4,7 @@ import { CheckCircle, Clock, MessageCircle, Shield } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-background to-secondary flex items-center py-20">
+    <section className="min-h-screen bg-background flex items-center py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -12,7 +12,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/84d1d246-1de3-428a-ad25-ba13b5755c75.png" 
                 alt="findfy logo"
-                className="h-10 w-auto"
+                className="h-16 md:h-20 w-auto"
               />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Perdiste algo.{" "}
