@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, MessageCircle, Shield } from "lucide-react";
-
+import LogoFindfy from "@/components/LogoFindfy";
 
 const Hero = () => {
   return (
@@ -9,11 +9,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <img 
-                src="/lovable-uploads/84d1d246-1de3-428a-ad25-ba13b5755c75.png" 
-                alt="findfy logo"
-                className="h-16 md:h-20 w-auto"
-              />
+              <LogoFindfy className="h-24 md:h-28 w-auto text-foreground" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Perdiste algo.{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
