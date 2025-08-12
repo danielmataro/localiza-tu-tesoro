@@ -24,7 +24,7 @@ const features = [
   {
     icon: DollarSign,
     title: "Precio claro",
-    description: "29€ por gestión, sin letra pequeña."
+    description: "Precio claro, sin letra pequeña.",
   }
 ];
 

@@ -18,9 +18,9 @@ const CTA = () => {
             <Button 
               size="lg" 
               className="text-lg px-8 py-6 shadow-strong hover:shadow-xl transition-all duration-300"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
             >
-              Pagar 29€ y empezar
+              Pagar y empezar
             </Button>
             <div className="block">
               <a 

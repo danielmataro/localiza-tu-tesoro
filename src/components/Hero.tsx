@@ -26,12 +26,6 @@ const Hero = () => {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
-                <span className="text-lg font-medium">Precio fijo: 29€ por gestión</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="bg-primary/10 p-2 rounded-full">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                </div>
                 <span className="text-lg font-medium">Búsqueda exhaustiva y metodología probada</span>
               </div>
               <div className="flex items-center space-x-3">
@@ -52,9 +46,9 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto text-lg px-8 py-6 shadow-strong hover:shadow-xl transition-all duration-300"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
               >
-                Empezar búsqueda por 29€
+                Empezar búsqueda
               </Button>
               <div className="block">
                 <a 

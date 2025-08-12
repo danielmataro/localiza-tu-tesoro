@@ -23,9 +23,9 @@ const StickyButton = () => {
     <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
       <Button 
         className="w-full shadow-strong text-lg py-6"
-        onClick={() => window.open('#', '_blank')}
+        onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
       >
-        Empezar búsqueda por 29€
+        Empezar búsqueda
       </Button>
     </div>
   );

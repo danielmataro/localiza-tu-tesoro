@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "¿Qué incluye exactamente el servicio de 29€?",
+    question: "¿Qué incluye exactamente el servicio?",
     answer: "La gestión de búsqueda y localización del objeto: investigamos, contactamos y trazamos posibles ubicaciones. No incluye el envío, recogida u otras gestiones logísticas posteriores."
   },
   {
