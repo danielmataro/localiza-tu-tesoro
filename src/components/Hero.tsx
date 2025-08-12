@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, MessageCircle, Shield } from "lucide-react";
-import heroRealImage from "@/assets/hero-real.jpg";
+
 
 const Hero = () => {
   return (
@@ -86,11 +86,14 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <img 
-              src={heroRealImage} 
-              alt="Objetos perdidos: llaves, móviles, maletas, mochilas, cámaras, documentos" 
+            <video 
               className="w-full h-auto rounded-2xl shadow-strong"
-            />
+              controls
+              poster="https://images.unsplash.com/photo-1518546305927-5a555bb7020b?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_24fps.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
           </div>
         </div>
       </div>
