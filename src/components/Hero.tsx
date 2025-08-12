@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <img 
-                src="/lovable-uploads/9bf9fb3f-1352-444d-92d4-0e5ac35e99ff.png" 
+                src="/lovable-uploads/84d1d246-1de3-428a-ad25-ba13b5755c75.png" 
                 alt="findfy logo"
                 className="h-10 w-auto"
               />
