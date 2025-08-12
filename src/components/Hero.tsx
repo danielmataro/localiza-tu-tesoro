@@ -82,14 +82,14 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <video 
-              className="w-full h-auto rounded-2xl shadow-strong"
-              controls
-              poster="https://images.unsplash.com/photo-1518546305927-5a555bb7020b?auto=format&fit=crop&w=1200&q=80"
-            >
-              <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_24fps.mp4" type="video/mp4" />
-              Tu navegador no soporta video HTML5.
-            </video>
+            <img
+              src="/lovable-uploads/e8cc4be7-eb16-4c0b-b306-80d699cd4afc.png"
+              alt="Mensaje de WhatsApp confirmando que Findfy ha encontrado el objeto perdido"
+              className="w-full h-auto rounded-2xl shadow-strong object-cover"
+              loading="lazy"
+              width={1200}
+              height={900}
+            />
           </div>
         </div>
       </div>
