@@ -33,9 +33,9 @@ const WhyChooseUs = () => {
     <section className="py-20 bg-gradient-to-b from-secondary to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por qué elegirnos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por qué somos los mejores recuperando objetos perdidos en España</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hacemos el trabajo que nadie tiene tiempo de hacer: llamar, insistir, verificar y documentar. Conectamos con las personas y los lugares correctos.
+            Somos especialistas en buscar y recuperar objetos perdidos. Nuestro equipo gestiona cada búsqueda con dedicación completa: contactamos con aeropuertos, hoteles, transporte público, oficinas de objetos perdidos y más. Tú descansas, nosotros trabajamos.
           </p>
         </div>
 

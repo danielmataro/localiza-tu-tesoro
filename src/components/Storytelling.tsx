@@ -6,9 +6,9 @@ const Storytelling = () => {
       <div className="container mx-auto px-4">
         <article className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">La historia detrás de recuperar lo perdido</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">¿Por qué es tan difícil encontrar objetos perdidos en España?</h2>
             <p className="text-lg text-muted-foreground">
-              Contactar con autoridades, centros y empresas no es simple: líneas ocupadas, formularios sin respuesta y procesos que requieren insistencia.
+              Buscar un objeto perdido implica contactar con decenas de lugares: aeropuertos, estaciones, hoteles, transporte público, oficinas municipales... Líneas ocupadas, formularios complejos y procesos que requieren paciencia y insistencia.
             </p>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">

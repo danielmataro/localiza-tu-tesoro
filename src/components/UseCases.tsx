@@ -3,28 +3,28 @@ import { Plane, MapPin, Car, Briefcase, Camera } from "lucide-react";
 const useCases = [
   {
     icon: Plane,
-    title: "Viajes",
-    items: "maletas, mochilas, neceseres, souvenirs"
+    title: "Aeropuertos y viajes",
+    items: "maletas extraviadas, móviles olvidados en vuelos, documentos perdidos en terminales"
   },
   {
     icon: MapPin,
-    title: "Ciudad",
-    items: "llaves, carteras, DNI/pasaporte, gafas"
+    title: "Centros urbanos",
+    items: "llaves perdidas en Madrid/Barcelona, carteras en restaurantes, DNI/pasaporte extraviados"
   },
   {
     icon: Car,
-    title: "Transporte",
-    items: "móvil olvidado en taxi/uber, abrigos en metro, paquetes"
+    title: "Transporte público",
+    items: "móvil olvidado en taxi/uber, abrigos en metro, equipaje en autobuses"
   },
   {
     icon: Briefcase,
-    title: "Trabajo/estudio",
-    items: "portátiles, tablets, USB, herramientas"
+    title: "Trabajo y estudios",
+    items: "portátiles perdidos en oficinas, tablets en universidades, documentos empresariales"
   },
   {
     icon: Camera,
-    title: "Ocio/eventos",
-    items: "cámaras, instrumentos, prendas"
+    title: "Eventos y ocio",
+    items: "cámaras en bodas, instrumentos musicales, prendas en discotecas"
   }
 ];
 
@@ -33,9 +33,9 @@ const UseCases = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Casos de uso</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Objetos perdidos que más recuperamos en España</h2>
           <p className="text-xl text-muted-foreground">
-            Recuperamos todo tipo de objetos en cualquier situación
+            Especializados en localizar móviles, documentos, maletas y objetos personales perdidos en aeropuertos, hoteles, transporte y más
           </p>
         </div>
 

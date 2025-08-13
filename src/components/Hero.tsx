@@ -11,13 +11,13 @@ const Hero = () => {
             <div className="space-y-4">
               <LogoFindfy className="h-24 md:h-28 w-auto text-foreground" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Perdiste algo.{" "}
+                ¿Perdiste un objeto en España?{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Nosotros lo encontramos.
+                  Te ayudamos a recuperarlo.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Gestionamos la búsqueda de tu objeto perdido en cualquier lugar, con una red global de contactos y un seguimiento personalizado por email y WhatsApp.
+                Servicio profesional de búsqueda de objetos perdidos en toda España. Localizamos móviles, maletas, documentos, llaves y más con nuestra red especializada de contactos. Seguimiento personalizado por email y WhatsApp hasta encontrar tu objeto perdido.
               </p>
             </div>
 
@@ -26,13 +26,13 @@ const Hero = () => {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
-                <span className="text-lg font-medium">Búsqueda exhaustiva y metodología probada</span>
+                <span className="text-lg font-medium">Especialistas en recuperar objetos perdidos en España</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="bg-primary/10 p-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
-                <span className="text-lg font-medium">Cobertura: cualquier tipo de objeto, en cualquier lugar</span>
+                <span className="text-lg font-medium">Localizamos móviles, maletas, documentos y más</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="bg-primary/10 p-2 rounded-full">

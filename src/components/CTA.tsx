@@ -7,10 +7,10 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Activa tu búsqueda ahora
+              ¿Perdiste algo importante? Empezamos a buscarlo hoy
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              No pierdas más tiempo. Comienza la búsqueda profesional de tu objeto perdido hoy mismo.
+              No esperes más. Cada hora cuenta cuando se trata de recuperar objetos perdidos. Nuestro equipo especializado comienza tu búsqueda inmediatamente.
             </p>
           </div>
 
