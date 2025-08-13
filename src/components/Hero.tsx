@@ -46,7 +46,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto text-lg px-8 py-6 shadow-strong hover:shadow-xl transition-all duration-300"
-                onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
+                onClick={() => window.open('https://buy.stripe.com/7sY8wQ87og2S1Kq3I418c01', '_blank')}
               >
                 Empezar búsqueda
               </Button>
