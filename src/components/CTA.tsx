@@ -40,7 +40,7 @@ const CTA = () => {
                 <Button 
                   size="lg" 
                   className="w-full sm:w-auto text-xl px-12 py-8 shadow-strong hover:shadow-2xl transition-all duration-300 text-white bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
-                  onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
+                  onClick={() => window.open('https://buy.stripe.com/7sY8wQ87og2S1Kq3I418c01', '_blank')}
                 >
                   Pagar una sola vez y empezar
                 </Button>

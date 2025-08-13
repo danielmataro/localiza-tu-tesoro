@@ -23,7 +23,7 @@ const StickyButton = () => {
     <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
       <Button 
         className="w-full shadow-strong text-lg py-6"
-        onClick={() => window.open('https://buy.stripe.com/eVqbJ20EW7wm3Sya6s18c00', '_blank')}
+        onClick={() => window.open('https://buy.stripe.com/7sY8wQ87og2S1Kq3I418c01', '_blank')}
       >
         Empezar búsqueda
       </Button>
